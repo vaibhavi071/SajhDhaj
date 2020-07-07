@@ -41,7 +41,15 @@ h6 {
     color: #000000;
 }
 
-
+/* Common Classes */
+.grad-eff-h2
+{
+    font-weight: 900;
+    background: -webkit-linear-gradient(right, #c31712, #FF851B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 h1 {
     font-size: 48px;
 }
@@ -264,7 +272,9 @@ ul {
 .nav-link:active{
     color: #faab3c;
 }
-
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
 .underline-from-center {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -895,3 +905,4 @@ ul {
     }
 }
 
+/* Common Classes */

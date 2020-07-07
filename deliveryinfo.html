@@ -44,13 +44,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div id="navbarTogglerDemo" class="collapse navbar-collapse" data-aos="fade-left">
-                <ul class="navbar-nav ml-auto">
+            <div id="navbarTogglerDemo" class="collapse navbar-collapse"  data-aos="fade-left">
+                <ul class="navbar-nav ml-auto" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" >
                     <li class="nav-item active">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link underline-from-center">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle underline-from-center" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Wedding Wear
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -60,7 +60,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle underline-from-center" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Suits
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -69,7 +69,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle underline-from-center" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Ready to Wear
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -77,17 +77,16 @@
                           <a class="dropdown-item" href="#">Stitched Suits</a>
                         </div>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item active underline-from-center">
                         <a class="nav-link">Towels</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item active underline-from-center">
                         <a class="nav-link">Pakistani Suits</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <br><br><br><br><br><br>
-
         <!--about info-->
         <div class="container">
             <h2>Delivery Information</h2>
@@ -104,16 +103,17 @@
 
 
         <!-- Contact Me -->
+    <!-- Contact Me -->
     <div id="contact" class="contact">
         <!-- <div class="container"> -->
             <div class="box-content-contact" data-aos="fade-up">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
+                    <div class="col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
                         <div class="content-left" >
                             <div class="section-title section-title-left">
                                 <h3>Contact Us</h3>
                             </div>
-                            <h2>Realize your dream with us</h2>
+                            <h2 class="a">Realize  <span class="b">your dream</span> with us</h2>
                             <ul>
                                 <li>
                                     <a href="https://www.facebook.com/gaurav.bhatia.792/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -126,7 +126,33 @@
                             <h6 class="marg-top hover-eff" >Contact Number: +91 9991816111</h6>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-left">
+                    <div class="col-md-3 col-sm-12 col-xs-12" data-aos="fade-right">
+                        <h3 class="underline-from-center">Information</h3>
+                        <br>
+                        <ul>
+                            <li>
+                                <a href="../SajhDhaj/aboutus.html">
+                                    <span>About us</span>
+                                </a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="../SajhDhaj/fabric-and-printing.html">
+                                    <span>Fabric and Printing Desciption</span>
+                                </a>
+                                
+                            </li>
+                            <br>
+                            <li>
+                                <a href="../SajhDhaj/deliveryinfo.html">
+                                    <span>Delivery and Return Information</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 col-sm-12 col-xs-12" data-aos="fade-left">
                         <div class="content-right">
                             <form action="contact-form.php" class="contact-form" id="contact-form" method="post">
                                 <div class="row">
@@ -168,6 +194,8 @@
             </div>
         <!-- </div> -->
     </div>
+
+
       <!-- Added Scripts -->
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
