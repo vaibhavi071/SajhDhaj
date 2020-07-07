@@ -1,0 +1,92 @@
+canvas {
+  display: block;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+html
+{
+	color: white;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+h1
+{
+  margin:10px;
+}
+
+
+.info
+{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	/*overflow: hidden;*/
+}
+/*button default*/
+.button {
+  position: relative;
+  color: white;
+  width: 175px;
+  height: 56px;
+  transition: all 0.3s;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  background-color: transparent;
+  border: none;
+  margin-top: 26px;
+  cursor: pointer;
+
+}
+.button span
+{
+  transition: all 0.3s;
+  transform: scale(1, 1);
+}
+
+.button::before, .button::after {
+content: '';
+position: absolute;
+transition: all 0.3s;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+}
+
+.button-six::before {
+opacity: 0;
+background: rgba(255, 255, 255, 0.1);
+transform: scale(1.3, 1.3);
+}
+
+.button-six:hover::before {
+opacity: 1;
+transform: scale(1, 1);
+}
+
+.button-six::after {
+transition: all 0.3s;
+border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.button-six:hover::after {
+transform: scale(0, 0);
+opacity: 0;
+}
