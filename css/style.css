@@ -98,8 +98,16 @@ ul {
 
 .dropdown-menu
 {
-    background-color: #ffecb0;
+    background-color: #ffffff;
 }
+.dropdown-item
+{
+    color: #777777;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #000000;
+}
+
 #slideshow img
 {
     /* height: 150px; */
@@ -157,7 +165,7 @@ ul {
 /*Button Default*/
 .button {
     position: relative;
-    color: #000000;
+    color: #ff851b;
     width: 139px;
     height: 43px;
     transition: all 0.3s;
@@ -200,7 +208,7 @@ ul {
 
 .button-six::after {
   transition: all 0.3s;
-  border: 1px solid #000000;
+  border: 1px solid #ff851b;
 }
 
 .button-six:hover::after {
@@ -256,6 +264,38 @@ ul {
 .nav-link:active{
     color: #faab3c;
 }
+
+.underline-from-center {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+.underline-from-center:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: #ff851b;
+      height: 2px;
+      -webkit-transition-property: left right;
+      transition-property: left right;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+.underline-from-center:hover:before {
+      left: 0;
+      right: 0;
+    }
+
+
 /*My INTRO*/
 .home-intro .intro-content {
     position: relative;
