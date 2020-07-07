@@ -44,13 +44,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div id="navbarTogglerDemo" class="collapse navbar-collapse" data-aos="fade-left">
-                <ul class="navbar-nav ml-auto">
+            <div id="navbarTogglerDemo" class="collapse navbar-collapse"  data-aos="fade-left">
+                <ul class="navbar-nav ml-auto" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" >
                     <li class="nav-item active">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link underline-from-center">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle underline-from-center" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Wedding Wear
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -60,7 +60,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle underline-from-center" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Suits
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -69,7 +69,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle underline-from-center" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Ready to Wear
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -77,10 +77,10 @@
                           <a class="dropdown-item" href="#">Stitched Suits</a>
                         </div>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item active underline-from-center">
                         <a class="nav-link">Towels</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item active underline-from-center">
                         <a class="nav-link">Pakistani Suits</a>
                     </li>
                 </ul>
@@ -128,7 +128,7 @@
                             <div class="intro-caption">
                                 <span>WE ARE</span>
                                 <h2>SAJH DHAJ</h2>
-                                <h3>Wear It! Love It! Share It</h3>
+                                <h3 class="a">Wear It! <p class="b" style="display: inline;">Love It!</p>  Share It</h3>
                                 <a href="#contact"><button class="button button-six" > Contact Us </button> </a>
                             </div>
                         </div>
@@ -395,7 +395,7 @@
                             <div class="section-title section-title-left">
                                 <h3>Contact Us</h3>
                             </div>
-                            <h2>Realize your dream with us</h2>
+                            <h2 class="a">Realize  <span class="b">your dream</span> with us</h2>
                             <ul>
                                 <li>
                                     <a href="https://www.facebook.com/gaurav.bhatia.792/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -464,6 +464,7 @@
     <!-- Added Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
     <script src="js/fakeLoader.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.filterizr.min.js"></script>
@@ -476,7 +477,16 @@
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/main2.js"></script>
-
+    <script>
+        $(document).ready(function(){
+            $(".dropdown, .btn-group").hover(function(){
+                var dropdownMenu = $(this).children(".dropdown-menu");                
+                if(dropdownMenu.is(":visible")){
+                    dropdownMenu.parent().toggleClass("open");
+                }
+            });
+        });		
+    </script>
 
 </body>
 
