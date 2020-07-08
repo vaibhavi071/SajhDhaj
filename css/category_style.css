@@ -1,13 +1,10 @@
-/* Gaurav's Portfolio CSS */
 body {
     font-family: 'Roboto', sans-serif;
-    /* background-image: url("../baxkground-subcategory.jpg");      */
+       
     background-color: black;
-    background-repeat: no-repeat;
-    
     background-position: center center;
     background-attachment: fixed;
-  
+    background-image: url("../images/category-bg.png");  
     background-repeat: no-repeat;
     background-size: cover;
     /*background: #ffda61;*/
@@ -22,7 +19,7 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE and Edge */
 body{
-  -ms-overflow-style: none;aeeeeeeeeeee
+  -ms-overflow-style: none;
 }
 
 input:focus,
@@ -111,7 +108,16 @@ ul {
 
 .dropdown-menu
 {
-    background-color: #ffecb0;
+    background-color: #000000;
+}
+
+.dropdown-item
+{
+    color: #777777;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #fff;
+    background-color: #181818;
 }
 #slideshow img
 {
@@ -170,7 +176,7 @@ ul {
 /*Button Default*/
 .button {
     position: relative;
-    color: #000000;
+    color: #ff851b;
     width: 139px;
     height: 43px;
     transition: all 0.3s;
@@ -202,7 +208,7 @@ ul {
 
 .button-six::before {
   opacity: 0;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   transform: scale(1.3, 1.3);
 }
 
@@ -213,7 +219,7 @@ ul {
 
 .button-six::after {
   transition: all 0.3s;
-  border: 1px solid #000000;
+  border: 1px solid #ff851b;
 }
 
 .button-six:hover::after {
@@ -222,14 +228,17 @@ ul {
 }
 
 
+
 /*Navigation Menu*/
 .navbar {
-    margin: 27px 0;
-    background: #ffda61;
-    color: #000000;
+    /*margin: 27px 0;*/
+    background: #000000;
+    color: #fff;
     padding: 8px 40px;
-    border-radius: 17px;
+    /*border-radius: 17px;*/
     transition: all .5s ease;
+    border-bottom: 3px solid #FF851B;
+    z-index: 3;
 
 }
 .navbar .navbar-brand h2 {
@@ -240,7 +249,7 @@ ul {
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-    color: #000000;
+    color: #fff;
     font-weight: 500;
     letter-spacing: 1px;
     padding-left: 12px;
@@ -254,7 +263,7 @@ ul {
     left: 0;
     right: 0;
     z-index: 999;
-    background: #ffda61;
+    background: #000000;
     margin-top: 0;
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
     transition: all .5s ease;
@@ -263,6 +272,43 @@ ul {
   opacity: 1;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 }
+
+.nav-link:active{
+    color: #faab3c;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+.underline-from-center {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+.underline-from-center:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: #ff851b;
+      height: 2px;
+      -webkit-transition-property: left right;
+      transition-property: left right;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+.underline-from-center:hover:before {
+      left: 0;
+      right: 0;
+    }
+
 .right {
     position: absolute;
     right: 0px;
@@ -334,6 +380,17 @@ ul {
 .contact .content-right .button {
     margin-top: 30px;
 }
+.contact {
+    padding: 27px 0px 0px 0px;
+}
+.box-content-contact{
+    padding: 40px;
+    border-top: 3px solid #FF851B;
+    background-color: #000000;
+}
+.box-content-contact .fab {
+    color: white;
+}
 
 /*footer*/
 .footer {
@@ -344,22 +401,8 @@ ul {
     margin-bottom: 0;
 }
 
-/*Percentage Classes*/
-.ninety-eight{
-    width: 98%;
-}
-.ninety{
-    width: 90%;
-}
-.ninety-five{
-    width: 95%;
-}
-.eighty-five{
-    width: 85%;
-}
-.seventy{
-    width: 70%;
-}
-.sixty{
-    width: 60%;
+
+/* Common Classes */
+.a:hover .b{
+    color: #FF851B;
 }
