@@ -151,3 +151,33 @@ $('.slider').slick({
     cssEase: 'ease-in-out',
     touchThreshold: 100
   })
+
+//   For Whatsapp Chat Light
+
+$(function() {
+    $('#WAButton').floatingWhatsApp({
+      phone: '+91 9306572699', //WhatsApp Business phone number International format-
+      headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+      popupMessage: "Hello, Welcome to Sajh Dhaj..... How may we help you today?", //Popup Message
+      showPopup: true, //Enables popup display
+      buttonImage: '<img src="./images/whatsapp.svg"/>', //Button Image
+      // headerColor: 'crimson', //Custom header color
+      position: "right",    
+      size: "60px"
+    });
+});
+
+//   For Whatsapp Chat Dark
+
+$(function() {
+    $('#WAButton-Dark').floatingWhatsApp({
+      phone: '+91 9306572699', //WhatsApp Business phone number International format-
+      headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+      popupMessage: "Hello, Welcome to Sajh Dhaj..... How may we help you today?", //Popup Message
+      showPopup: true, //Enables popup display
+      buttonImage: '<img src="./images/whatsapp.svg"/>', //Button Image
+      headerColor: '#262d31', //Custom header color
+      position: "right",  
+      size: "60px"  
+    });
+});
