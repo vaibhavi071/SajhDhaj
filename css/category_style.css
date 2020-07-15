@@ -313,7 +313,7 @@ ul {
     position: absolute;
     right: 0px;
     width: 450px;
-    border: 3px solid #73AD21;
+    border: 3px solid goldenrod;
     padding: 10px;
     
   }
@@ -321,7 +321,7 @@ ul {
     position: absolute;
     left: 0px;
     width: 450px;
-    border: 3px solid #73AD21;
+    border: 3px solid goldenrod;
     padding: 10px;
     
   }
@@ -406,3 +406,8 @@ ul {
 .a:hover .b{
     color: #FF851B;
 }
+/*mycss*/
+.cat-image {
+    max-width: 100%;
+    height: auto;
+  }
