@@ -327,62 +327,7 @@ ul {
   }
 
 /*Contact ME*/
-.contact .content-left h2 {
-    font-size: 50px;
-    font-weight: 900;
-    margin-bottom: 50px;
-}
-.contact .content-left ul li {
-    display: inline-block;
-    margin-right: 40px;
-}
-.contact .content-left ul li a i {
-    font-size: 20px;
-    transition: all .2s ease;
-}
-.contact .content-left ul li:hover a i {
-    color: #FF851B;
-}
-.hover-eff
-{
-    transition: all 0.5s ease;
-}
-.hover-eff:hover
-{
-    color: #FF851B;
-    transition: all 0.5s ease;
-}
-.contact .content-left ul li:last-child {
-    margin-right: 0;
-}
-.contact .content-right .row {
-    margin-bottom: 30px;
-}
-.contact .content-right .row:last-child {
-    margin-bottom: 0;
-}
-.contact .content-right .row .form-control {
-    border: 0;
-    border-bottom: 1px solid #525252;
-    border-radius: 0;
-    background: transparent;
-    padding: 0;
-    color: #000000;
-}
-.contact .content-right .row .form-control:hover {
-    border-color: #FF851B;
-}
-.contact .content-right .row .form-control:focus {
-    outline: 0;
-    box-shadow: none;
-    border-color: #FF851B;
-}
-.contact .content-right .button {
-    margin-top: 30px;
-}
-.contact {
-    padding: 27px 0px 0px 0px;
-}
+
 .box-content-contact{
     padding: 40px;
     border-top: 3px solid #FF851B;
@@ -391,15 +336,10 @@ ul {
 .box-content-contact .fab {
     color: white;
 }
+.box-content-contact ul span{
+    color: white;
+}
 
-/*footer*/
-.footer {
-    text-align: center;
-    margin-bottom: 5em;
-}
-.footer p {
-    margin-bottom: 0;
-}
 
 
 /* Common Classes */

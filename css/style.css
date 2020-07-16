@@ -252,7 +252,7 @@ ul {
     padding-right: 12px;
     transition: all .4s ease;
 }
-.navbar.fix {
+/*.navbar.fix {
     position: fixed;
     border-radius: 0px;
     top: 0;
@@ -263,7 +263,7 @@ ul {
     margin-top: 0;
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
     transition: all .5s ease;
-}
+}*/
 .nav-link:hover {
   opacity: 1;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
@@ -649,6 +649,10 @@ ul {
 }
 
 
+
+
+
+
 @keyframes titles {
     0% {
         transform: translateY(100%);
@@ -828,6 +832,11 @@ ul {
     .contact .content-right .button {
         margin-top: 0;
     }
+
+/*    #WAButton{
+        right: 92px !important;
+    }
+*/
 }
 @media (max-width: 640px) {
     .home-intro .intro-content .intro-caption {
