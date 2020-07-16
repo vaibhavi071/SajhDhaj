@@ -1,0 +1,29 @@
+.product-image{
+    display: flex;
+}
+
+.product-image img{
+    margin: auto;
+    height: 600px;
+}
+
+.product-desc h5
+{
+    line-height: 2em;
+    color: darkgray;
+}
+.product-desc h4
+{
+    line-height: 2em;
+    
+}
+
+.disclaimer .d
+{
+    color: rgb(247, 0, 0);
+    transition: all .5s ease-in-out;
+}
+
+.c:hover .d{
+    text-decoration: underline;
+}

@@ -88,7 +88,7 @@ jQuery(function ($) {
   });
   
       // restart a timer when a button is clicked
-  $( window ).scroll(function () {console.log($(window).scrollTop());
+  $( window ).scroll(function () {
     if($(window).scrollTop() > 300 && $(window).scrollTop() < 401)
     // if($(window).scrollTop() == 400)
     {
