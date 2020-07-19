@@ -4,7 +4,8 @@
 
 .product-image img{
     margin: auto;
-    height: 600px;
+    /*height: 600px;*/
+    width: 93%;
 }
 
 .product-desc h5

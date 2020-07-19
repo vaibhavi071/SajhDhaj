@@ -1,0 +1,29 @@
+Responsiveness
+
+Index.html
+	1. Fixed whatsapp button
+		Way: Had to remove data-aos-"left", was taking extra space
+	2. Contact Section had space issues, fixed them
+
+Aboutus.html, deliveryinfo.html, fabric-and-printing.html
+	1. Fixed whatsapp button
+		Way: Had to remove data-aos-"left", was taking extra space
+
+casualsuits.html
+	1. All row had extra space in left side, removed it
+
+
+ready-to-wear.html, suits.html, wedding-wear.html
+	1. Remove <br>, as diff device sizes affected diffrently
+		Way: Added class marg-9em to provide margin
+	2. Images were not set to auto, size was pixelized
+		Way: Set widht to 60% in full mode and 84% in mobile mode.
+		     Took care of landscape mode also
+	3. Since image of category and its name and button are alternative
+           One left-right, other right-left, in mobile mode, order was
+	       up-down,and other down-up
+			Way: Use flex order property under 746px size of device
+	4. Left and right classes do not need to be absolute and left and
+	   right parameter shud not be 0, otherwise in mobile mode 
+           they will be in separate corners of the page, whereas they shud be in 
+           mid, so we always use auto margin

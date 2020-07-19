@@ -183,7 +183,7 @@ ul {
     text-align: center;
     display: inline-block;
     font-size: 1.1em;
-    background-color: transparent;
+    background-color: black;
     border: none;
     margin-top: 26px;
     cursor: pointer;
@@ -276,6 +276,14 @@ ul {
 .nav-link:active{
     color: #faab3c;
 }
+
+/*Responsive Navbar Bootstrap*/
+.navbar-toggler
+{
+  background-color: #ff851b;
+}
+
+
 .dropdown:hover>.dropdown-menu {
     display: block;
   }
@@ -309,22 +317,48 @@ ul {
       right: 0;
     }
 
-.right {
-    position: absolute;
-    right: 0px;
-    width: 450px;
-    border: 3px solid #73AD21;
+.cat-img {
+    width: 60%;
+    border: 3px solid goldenrod;
     padding: 10px;
     
   }
-  .left {
-    position: absolute;
-    left: 0px;
-    width: 450px;
-    border: 3px solid #73AD21;
-    padding: 10px;
-    
-  }
+.view-collection
+{
+  margin: auto;
+  text-align: center;
+}
+
+
+.left
+{
+  display: flex;
+  justify-content: flex-start;
+}
+.right
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.marg-9em
+{
+  margin-bottom: 9em;
+  margin-top: 9em;
+}
+
+.marg-2em
+{
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.order-res{
+  display: flex;
+}
+
+
 
 /*Contact ME*/
 
@@ -345,4 +379,51 @@ ul {
 /* Common Classes */
 .a:hover .b{
     color: #FF851B;
+}
+/*mycss*/
+.cat-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+/*Responsive*/
+@media (max-width: 768px) {
+
+	.button-res
+	{
+		width: 109px;
+		height: 34px;
+		font-size: 0.8em
+	}
+
+	.left
+	{
+		justify-content: center;
+	}
+
+	.right
+	{
+		justify-content: center;
+	}
+
+	.cat-img
+	{
+		width: 84%;
+	}
+
+	.category-image
+	{
+		order: 1;
+	}
+	.category-text
+	{
+		order: 2;
+	}
+
+	.category-text h2
+	{
+		font-size: 1.8em;
+	}
+
 }
